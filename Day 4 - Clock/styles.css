@@ -1,0 +1,75 @@
+/* pallette */
+*{
+    margin: 0;
+    padding: 0;
+    --red-crayola: #ff1053ff;
+    --dark-blue-gray: #6c6ea0ff;
+    --vivid-sky-blue: #66c7f4ff;
+    --beau-blue: #c1cad6ff;
+    --white: #ffffffff;
+    --dark: #091921;
+
+}
+
+body{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.clock{
+    position: relative;
+    width: 75vh;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1vh 1vh 1vh rgba(51, 51, 51, 0.15) inset, 
+    2vh 2.5vh 2vh rgba(0, 0, 0, 0.25);
+}
+
+.hand{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom;
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.hour{
+    width: 1vh;
+    height: 20vh;
+    background: rgb(0, 162, 255);
+}
+
+.min{
+    width: 0.75vh;
+    height: 28vh;
+    background: white;
+}
+
+.sec{
+    width: 0.5vh;
+    height: 30vh;
+    background: rgb(255, 67, 67);
+}
+
+.dot{
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark);
+    border: 0.5vh solid rgb(255, 67, 67);
+    border-radius: 50%;
+    box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
