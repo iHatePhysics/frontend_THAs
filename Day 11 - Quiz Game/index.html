@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Day 11 Quiz Game!</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Quiz</h1>
+      <nav></nav>
+      <label class="switch">
+        <input id="checkbox" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </header>
+    <main>
+      <div class="game-won">
+        <h1>Quiz Finished!</h1>
+        Final Score
+        <p class="final-score"></p>
+        <a href="index.html"><button>Play Again</button></a>
+      </div>
+      <div class="begin">
+        <h1>Your name</h1>
+        <input type="text" name="Name" id="player-name" />
+        <button id="p-name" onclick="startGame()">Start Quiz!</button>
+      </div>
+      <section class="questions">
+        <div class="card">
+          <h1 id="question">Question 1</h1>
+          <div class="options">
+            <div class="option" data-id="1">
+              <p class="choice">A</p>
+              <p class="option1 option-text" data-id="1">Option1</p>
+            </div>
+            <div class="option" data-id="2">
+              <p class="choice">B</p>
+              <p class="option2 option-text" data-id="2">Option2</p>
+            </div>
+            <div class="option" data-id="3">
+              <p class="choice">C</p>
+              <p class="option3 option-text" data-id="3">Option3</p>
+            </div>
+            <div class="option" data-id="4">
+              <p class="choice">D</p>
+              <p class="option4 option-text" data-id="4">Option4</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="side-bar">
+        <div class="hint-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">Hover for a Hint!</div>
+              <div class="flip-card-back hint"></div>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="stats"></div>
+      </section>
+    </main>
+    <script src="./index.js" async defer></script>
+  </body>
+</html>
