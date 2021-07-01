@@ -1,0 +1,10 @@
+* {
+  margin: 0 auto;
+  background-color: #091921;
+}
+#app {
+  font-size: 100px;
+  text-align: center;
+  margin: 0 auto;
+  color: whitesmoke;
+}
