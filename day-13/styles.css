@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  --whitelight: #ffffff;
+  --lightgray: #eef2f4;
+  --lightdarkgray: #d7d8e4;
+  --lightdarkergray: #8d96b2;
+  --lightblue: #315efb;
+  --lightblack: #262626;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+.joke-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vh;
+  height: 70vh;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.joke-container {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.next-btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--lightblue);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.next-btn:active {
+  transform: scale(0.98);
+  transition: ease-in 0.2s;
+}
+
+.feather-refresh-cw {
+  color: whitesmoke;
+}
+.next-btn-text {
+  color: whitesmoke;
+  font-weight: 50px;
+}
+.setup,
+.punchline {
+  color: var(--lightblue);
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+/*  */
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+.loader {
+  color: #ffffff;
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: "";
+}
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #0dc5c1;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.1em 5.1em;
+  transform-origin: 5.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #0dc5c1;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 4.9em;
+  -webkit-transform-origin: 0.1em 5.1em;
+  transform-origin: 0.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
