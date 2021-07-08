@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  /* border: 2px solid rgb(255, 0, 0); */
+  display: flex;
+  align-items: center;
+  background-color: rgb(27, 72, 207);
+}
+
+.food-list {
+  margin: 0 auto;
+  width: 30vw;
+  height: 80vh;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  background-color: royalblue;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.food-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  width: 25vw;
+  height: 20vh;
+  margin-top: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all ease-in 0.2s;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease-out 0.2s;
+}
+
+.card-header {
+  color: royalblue;
+}
+.card-text {
+  color: rgb(4, 0, 226);
+}
