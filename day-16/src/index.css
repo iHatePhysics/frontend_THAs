@@ -42,7 +42,7 @@ code {
   width: 64vh;
   height: 64vh;
   border: 2px solid rgb(255, 255, 255);
-  background-color: rgb(40, 197, 100);
+  background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
   transition: all ease-in 0.2s;
 }
@@ -62,7 +62,7 @@ code {
 
 .row:nth-child(odd) .square:nth-child(even),
 .row:nth-child(even) .square:nth-child(odd) {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(40, 197, 100);
 }
 
 .board:hover {
