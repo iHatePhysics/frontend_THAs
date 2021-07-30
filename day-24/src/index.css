@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 255, 34, 0.8);
+}
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 5%;
+  background-color: #091921;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.home-container,
+.login-container,
+.profile-container,
+.about-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #0d232e;
+  color: whitesmoke;
+  font-weight: 100;
+}
