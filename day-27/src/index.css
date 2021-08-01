@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 2em;
+  box-sizing: border-box;
+}
+.todo-app {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.todo-list {
+  height: 30em;
+  width: 25em;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+.todo-card {
+  width: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+.todo-title {
+  width: 12em;
+  overflow: hidden;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  width: 20em;
+  justify-content: space-between;
+}
+.clear-btn {
+  background-color: grey;
+}
+.delete-btn,
+.add-btn,
+.btn {
+  outline: none;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  color: white;
+  height: 2em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.delete-btn:active,
+.add-btn:active,
+.clear-btn:active {
+  transform: scale(0.99);
+  transition: transform 0.2s;
+}
+
+.delete-btn {
+  background-color: rgb(247, 75, 104);
+}
+.add-btn {
+  background-color: rgb(17, 202, 131);
+}
+.add-input {
+  outline: none;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 12em;
+  height: 2em;
+  background-color: whitesmoke;
+}
+.add-todo {
+  display: flex;
+  align-items: center;
+  width: 20em;
+  height: 4em;
+  padding: 1em;
+  box-sizing: border-box;
+  justify-content: space-between;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
