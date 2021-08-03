@@ -30,6 +30,7 @@
   height: 100vh;
   display: grid;
   place-items: center;
+  background-color: whitesmoke;
 }
 .dark {
   background-color: #091921;
@@ -63,6 +64,7 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: black;
+  background-color: transparent;
 }
 .input-box.dark {
   color: whitesmoke;
