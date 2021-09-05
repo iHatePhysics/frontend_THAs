@@ -1,0 +1,42 @@
+import React, { useState } from "react";
+import { PostType } from "../App";
+const Post = ({ post }: { post: PostType }) => {
+  const [isLiked, setLiked] = useState(true);
+  return (
+    <div className="card post">
+      <div className="card-header card-heading">
+        <div className="title-pfp">
+          <img className="post-pfp" src={post.pfp} alt="" />
+          <h5 className="card-title">{post.username}</h5>
+        </div>
+
+        <i className="bi bi-three-dots"></i>
+      </div>
+      <img src={post.post} className="card-img-top" alt="..." />
+      <div className="buttons">
+        <i
+          className={isLiked ? "bi bi-heart-fill" : "bi bi-heart"}
+          onClick={() => setLiked(!isLiked)}
+        ></i>
+        <i className="bi bi-chat"></i>
+        <svg
+          aria-label="Share Post"
+          className="_8-yf5 shareicon "
+          fill="#262626"
+          height="24"
+          role="img"
+          viewBox="0 0 48 48"
+          width="24"
+        >
+          <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+        </svg>
+      </div>
+      <div className="card-caption">
+        <h5 className="caption-usname">{post.username}</h5>{" "}
+        <h6 className="caption">{post.caption}</h6>
+      </div>
+    </div>
+  );
+};
+
+export default Post;

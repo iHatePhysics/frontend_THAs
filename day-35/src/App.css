@@ -1,0 +1,134 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+body {
+  background-color: whitesmoke;
+}
+.container {
+  max-width: 1000px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+.navbar .navbar-nav img {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  border: 1px solid rgb(187, 187, 187);
+}
+.navbar .navbar-nav i {
+  font-size: 1.5em;
+  color: #000;
+  padding: 0px 5px;
+}
+.navbar .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navbar .search input {
+  width: 220px;
+  height: 30px;
+  text-align: center;
+}
+
+.story {
+  display: block;
+  margin-top: 100px;
+}
+
+.story {
+  display: block;
+  margin-top: 7.5em;
+  white-space: nowrap;
+  padding: 1em;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
+}
+.story::-webkit-scrollbar {
+  visibility: hidden;
+}
+.story .story-img {
+  width: 3.5em;
+  height: 3.5em;
+  margin: 0 0.3em auto;
+  border: 2px solid #c62f91;
+  border-radius: 100%;
+  display: inline-block;
+}
+.story .story-img img {
+  display: inline-block;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+}
+.post {
+  margin: 2em 0;
+}
+.buttons {
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.buttons i {
+  /* background-color: tomato; */
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0.5em;
+}
+.buttons .shareicon {
+  /* background-color: tomato; */
+  margin: 0 0.5em;
+  margin-top: 0.5em;
+}
+.bi.bi-heart-fill {
+  color: rgb(230, 30, 63);
+}
+.title-pfp {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5em;
+}
+.card-title {
+  margin: 0 1em;
+}
+.card-heading {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-pfp {
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 100%;
+  border: 1px solid rgba(204, 204, 204, 0.459);
+}
+
+.card-caption {
+  margin: 1em 0.5em;
+
+  display: flex;
+  align-items: baseline;
+}
+.card-caption .caption-usname {
+  margin: 0 0.2em;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  font-size: 16px;
+}
+.card-caption .caption {
+  margin: 0 0.2em;
+  color: rgb(51, 51, 51);
+  font-weight: 350;
+  font-size: 16px;
+}
